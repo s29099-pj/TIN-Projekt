@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kółko-Krzyżyk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gra Kółko-Krzyżyk </h1>
+        <div id="current-player">Aktualny gracz: X</div>
+        <div id="scores">
+            <div id="player-x-score">Gracz X: 0</div>
+            <div id="player-o-score">Gracz O: 0</div>
+        </div>
+        <button id="reset-btn" onclick="resetGame()">Zresetuj grę</button>
+        <button id="reset-scores-btn" onclick="resetScores()">Zresetuj punkty</button>
+    </header>
+    <div id="message-box">Pojedynek numer 1</div>
+
+    <section id="game-board">
+        <div class="cell" onclick="handleMove(this)"></div>
+        <div class="cell" onclick="handleMove(this)"></div>
+        <div class="cell" onclick="handleMove(this)"></div>
+        <div class="cell" onclick="handleMove(this)"></div>
+        <div class="cell" onclick="handleMove(this)"></div>
+        <div class="cell" onclick="handleMove(this)"></div>
+        <div class="cell" onclick="handleMove(this)"></div>
+        <div class="cell" onclick="handleMove(this)"></div>
+        <div class="cell" onclick="handleMove(this)"></div>
+    </section>
+    <footer>
+        <p>s29099</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
